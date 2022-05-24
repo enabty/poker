@@ -30,12 +30,27 @@
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
 
+  <script src="js/range_list.js" defer></script>
+  <script src="js/script.js" defer></script>
+
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
   <script>
     window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
     ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
   </script>
   <script src="https://www.google-analytics.com/analytics.js" async></script>
+
+  <br>
+  <div id="legend">
+    <span class="border" style="background:red;color:white">value bet</span>
+    <span class="border" style="background:blue;color:white">bluff bet</span>
+    <span class="border" style="background:green;color:white">call</span>
+    <span class="border" style="">fold</span>
+    <a href="/help.html">?</a>
+  </div>
+
+  <div id="range"></div>
+
 </body>
 
 </html>
