@@ -1,4 +1,6 @@
-let positions = ["utg", "utg+1", "utg+2", "lj", "hj", "co", "btn", "sb", "bb"];
+// let positions = ["utg", "utg+1", "utg+2", "lj", "hj", "co", "btn", "sb", "bb"];
+let positions = ["bb","sb","btn","co","hj","utg"];
+
 
 function createSelect(txt, callback, avail) {
   let select = document.createElement("div");
