@@ -1,5 +1,6 @@
 html,
     body {
+        background-color: rgb(59, 59, 59);
     margin: 0;
     padding: 0;
     font-family: monospace;
@@ -57,3 +58,94 @@ html,
     text-align: center;
     font-family: monospace;
     }
+    #pics {
+    width: 100%;
+    text-align: center;
+    font-family: monospace;
+    display: inline-block;
+    margin: 1px;
+    vertical-align: middle;
+    text-align: center;
+    }
+    #picslink {
+    width: 100%;
+    text-align: center;
+    font-family: monospace;
+    display: inline-block;
+    margin: 1px;
+    vertical-align: middle;
+    text-align: center;
+    }
+
+    #pcs {
+    font-size: 3vw;
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+    }
+    .border {
+    margin: 2px;
+    padding: 2px;
+    border: 1px solid black;
+    border-radius: 2px;
+    }
+    #pcs div {
+    }
+    #pcs span {
+    display: inline-block;
+    margin: 1px;
+    vertical-align: middle;
+    text-align: center;
+    border: 1px solid rgba(0,0,0,0.2);
+    border-radius: 2px;
+    height: 5vw;
+    width: 6vw;
+    }
+    @media screen and (min-width: 600px) {
+    #pcs {
+        font-size: 18px;
+    }
+    #pcs span {
+        height: 30px;
+        width: 35px;
+    }
+    }
+    .select {
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+    }
+    .select button {
+    -webkit-appearance: none;
+    font-size: 1em;
+    font-family: monospace;
+    background: white;
+    border: 1px solid black;
+    border-radius: 2px;
+    box-shadow: 1px 1px 2px grey;
+    }
+    button:focus {
+        background-color: indianred;
+        }
+
+        /*
+    using the ::before pseudo-element, with generated
+    content, to add text to the button elements that
+    have a data-src attribute:
+    */
+    button[data-src]::before {
+        content: 'Show image ' attr(value);
+    }
+    
+    #gallery {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, 500px);
+        grid-gap: 1em;
+        align-content: center;
+        justify-content: center;
+    }
+
+    .off {
+        display: none;
+        background-color: indianred;
+      }
